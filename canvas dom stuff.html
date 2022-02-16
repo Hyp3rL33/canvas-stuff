@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500" style="border-style: solid;"></canvas>
+
+    <script>
+
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = "blue";
+        ctx.moveTo(50, canvas.height - 450);
+        ctx.lineTo(canvas.height - 50, 450 );
+        ctx.stroke();
+
+
+        var canvas = document.getElementById("myCanvas");
+        var context =  canvas.getContext("2d");
+        ctx.lineWidth = 15;
+        ctx.strokeStyle = "red";
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2, canvas.height / 2 + 40, 80, 1.1 * Math.PI, 1.9 * Math.PI, false );
+        ctx.stroke();
+    </script>
+</body>
+</html>
